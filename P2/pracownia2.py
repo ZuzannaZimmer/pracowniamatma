@@ -1,7 +1,8 @@
 """Zbieznosc metod iteracyjnych"""
 
 import przyklad0, zadanie, iteracyjne
-import zadanie1
+import zadanie1, zadanie2
+
 
 def testy(typ):
     if typ == 1:    
@@ -39,8 +40,14 @@ def testy(typ):
     elif typ == 8:
         # tutaj mozna zrealizowac zadania
         zad1 = zadanie1.Zadanie1()
-        # zad1.testy()
-        zad1.badaj_zbieznosc()
+        zad1.testy()
+        # zad1.badaj_zbieznosc()
+    elif typ == 9:
+        test9 = zadanie2.Zadanie2()
+        # test9.testy()
+        test9.badaj_zbieznosc()
+        pass
+        
     
 if __name__ == '__main__':
-    testy(8)
+    testy(9)
